@@ -23,25 +23,25 @@
                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 
   #app { display: grid; grid-template-columns: 1fr 300px; grid-template-rows: auto 1fr auto;
-         gap: 10px; padding: 12px; height: 100vh; max-height: 100vh; }
+         gap: 10px; padding: 12px; height: 100vh; max-height: 100vh; overflow: hidden; }
 
   header { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; padding: 4px 0; }
   header h1 { font-size: 1rem; font-weight: 600; color: var(--text); letter-spacing: .02em; }
   #phase-badge { font-size: 0.7rem; font-weight: 600; padding: 2px 10px;
                  border-radius: 20px; letter-spacing: .06em; }
 
-  #main-col { display: flex; flex-direction: column; gap: 10px; min-height: 0; }
-  #side-col  { display: flex; flex-direction: column; gap: 10px; min-height: 0; }
+  #main-col { display: flex; flex-direction: column; gap: 10px; min-height: 0; overflow-y: auto; }
+  #side-col  { display: flex; flex-direction: column; gap: 10px; min-height: 0; overflow-y: auto; }
 
   .panel { background: var(--bg2); border: 0.5px solid var(--border);
-           border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 6px; }
+           border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
   .panel-label { font-size: 0.65rem; font-weight: 600; color: var(--muted);
                  letter-spacing: .08em; text-transform: uppercase; }
 
   canvas { display: block; border-radius: 4px; }
-  #cv-main { width: 100%; image-rendering: pixelated; }
+  #cv-main { width: 100%; image-rendering: pixelated; max-height: 50vh; }
 
-  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; flex-shrink: 0; }
 
   .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
   .stat { background: var(--bg3); border: 0.5px solid var(--border); border-radius: 6px;
@@ -83,7 +83,7 @@
 
   <!-- LEFT COLUMN -->
   <div id="main-col">
-    <div class="panel" style="flex:1; min-height:0;">
+    <div class="panel">
       <div class="panel-label">Supercell cross-section — vorticity &amp; wind field</div>
       <canvas id="cv-main"></canvas>
       <div class="legend">
@@ -125,7 +125,7 @@
       <canvas id="cv-vort" width="276" height="130"></canvas>
     </div>
 
-    <div class="panel" style="flex:1;">
+    <div class="panel" style="flex:1; min-height:0; overflow-y: auto;">
       <div class="panel-label">Controls</div>
       <div class="ctrl"><label>Shear (m/s/km)</label><input type="range" id="sl-shear" min="2" max="20" value="10" step="1"><span id="vl-shear">10</span></div>
       <div class="ctrl"><label>CAPE (J/kg)</label><input type="range" id="sl-cape" min="500" max="5000" value="2500" step="100"><span id="vl-cape">2500</span></div>
