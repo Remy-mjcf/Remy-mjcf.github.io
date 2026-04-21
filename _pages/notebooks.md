@@ -23,3 +23,9 @@ An interactive tool for visualizing the layers of a Convolutional Neural Network
 ## Climate Anomaly Detector
 An analysis of climate anomalies using atmospheric data.  
 [View Notebook](/notebooks/climate_anomaly_detector.html)
+
+---
+
+## Supercell Tornado Simulator
+An interactive simulation of supercell thunderstorm dynamics and tornado formation using physical models.  
+[View Simulator](/notebooks/supercell_sim.html)

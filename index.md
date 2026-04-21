@@ -19,4 +19,10 @@ Analysis and detection of climate anomalies using atmospheric data and 3 differe
 
 ---
 
+## Supercell Tornado Simulator
+Interactive visualization of supercell thunderstorm dynamics and tornado formation.  
+[View Simulator](/notebooks/supercell_sim.html){: .btn .btn--primary}
+
+---
+
 [See all projects →](/notebooks/){: .btn .btn--inverse}
