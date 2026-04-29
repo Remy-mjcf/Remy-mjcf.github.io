@@ -7,6 +7,12 @@ Welcome! I'm a data scientist with backgrounds in atmospheric sciences and machi
 
 ---
 
+## Supercell Tornado Simulator
+Interactive visualization of supercell thunderstorm dynamics and tornado formation.  
+[View Simulator](/notebooks/supercell_sim.html){: .btn .btn--primary}
+
+---
+
 ## CNN Layer Visualizer
 An interactive tool for visualizing the layers of a Convolutional Neural Network built with Streamlit.  
 [View Project](/notebooks/#cnn-layer-visualizer){: .btn .btn--primary}
@@ -19,9 +25,9 @@ Analysis and detection of climate anomalies using atmospheric data and 3 differe
 
 ---
 
-## Supercell Tornado Simulator
-Interactive visualization of supercell thunderstorm dynamics and tornado formation.  
-[View Simulator](/notebooks/supercell_sim.html){: .btn .btn--primary}
+## PJM Energy Demand Forecasting
+Final project for the neural network portion of the IBM Machine Learning Engineering 
+[View Notebook](/notebooks/PJM_EnergyForecasting.html){: .btn .btn--primary}
 
 ---
 

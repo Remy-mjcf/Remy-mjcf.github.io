@@ -29,3 +29,9 @@ An analysis of climate anomalies using atmospheric data.
 ## Supercell Tornado Simulator
 An interactive simulation of supercell thunderstorm dynamics and tornado formation using physical models.  
 [View Simulator](/notebooks/supercell_sim.html)
+
+---
+
+## PJM Energy Demand Forecasting
+A jupyter notebook containing the capstone project for the neural network portion of the IBM Machine Learning Engineering Specialization
+[View Notebook](/notebooks/PJM_EnergyForecasting.html)
